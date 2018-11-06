@@ -96,13 +96,13 @@ public final class LocalLogManager {
         for(final File f:allFiles){
             String fileName = f.getName().toLowerCase();
 
-            boolean canView =false;
-            for(String ext:LOGEXTS){
-                if(fileName.endsWith(ext)){
-                    canView = true;
-                    break;
-                }
-            }
+            boolean canView =true;
+//            for(String ext:LOGEXTS){
+//                if(fileName.endsWith(ext)){
+//                    canView = true;
+//                    break;
+//                }
+//            }
 
             if(canView) {
                 FileLogInfo info = new FileLogInfo();
